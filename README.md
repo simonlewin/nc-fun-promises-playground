@@ -37,7 +37,7 @@ _**Hint:** [Promise.all()](https://developer.mozilla.org/en-US/docs/Web/JavaScri
 
 ### 5. Save song lyrics
 
-Now we can use what we have practiced so far with promises and using different libraries. Within `4-save-song-lyrics.js`:
+Now we can use what we have practised so far with promises and using different libraries. Within `4-save-song-lyrics.js`:
 
 - Use `inquirer` to ask for an artist and a song.
 - Use the artist and song title to request the song lyrics using `axios` to make an http GET request to this song lyrics api (`https://api.lyrics.ovh/v1/:artist/:song`) _**Warning:** this server might take a little while to respond!_
@@ -48,12 +48,12 @@ Now we can use what we have practiced so far with promises and using different l
 
 If you have got up to here... CONGRATULATIONS! Time to take a break and make a brew :).
 
-## Additional Challenges
+## Extra Challenges
 
 1. Refactor challenges 1, 2 and 3 into flexible/reusable functions.
 
-2. Promisifying an existing callback function
+2. Head over to the `extra-challenges/promisification.js`. There you will see a classic async callback function `readSecretFile`. Without changing this original function, you should re-use it to make a new function, `promisifiedReadSecretFile`. `promisifiedReadSecretFile` should perform the same task but instead of using the callback pattern, returns the results in a `Promise`.
 
-e.g. setTimeout, http request, fs.readFile
+Keep track of your progress by running `npm test`!
 
-- update task 5 to use https://github.com/sindresorhus/ora to log what is happening during the execution of the code
+3. Update task 5 to use [a loading spinner package](https://github.com/sindresorhus/ora) to log what is happening during the execution of the code.
