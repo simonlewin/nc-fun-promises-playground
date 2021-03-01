@@ -30,7 +30,7 @@ Use the `axios` `.get` method to make an http GET request to the `https://pokeap
 
 ### 4. use inquirer and axios to get a single pokemon
 
-Use `inquirer` to ask for a number that will represent the pokemon id, and then use axios to make a GET request to `https://pokeapi.co/api/v2/pokemon/:id` to get info about the pokemon with that id.
+In `4-get-single-pokemon.js`, use `inquirer` to ask the user for a number that will represent the pokemon id, and then use axios to make a GET request to `https://pokeapi.co/api/v2/pokemon/:id` to get info about the pokemon with that id.
 
 - log the name of the pokemon with that id
 - use a single `catch` method to handle if the axios request gives back a 404 - in this case, log a user friendly error saying that the pokemon does not exist.
