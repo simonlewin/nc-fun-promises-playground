@@ -28,18 +28,27 @@ You will need to install the [axios](https://github.com/axios/axios#example) pac
 
 Use the `axios` `.get` method to make an http GET request to the `https://pokeapi.co/api/v2/pokemon` api and log the list of pokemon results from the response object.
 
-### 4. Compare & combine files
+### 4. use inquirer and axios to get a single pokemon
 
-In the `4-compare-combine.js` file use the `fs/promises` `readFile` method to read the contents of `secret-message.txt` and `super-secret-message.txt` and:
+Use `inquirer` to ask for a number that will represent the pokemon id, and then use axios to make a GET request to `https://pokeapi.co/api/v2/pokemon/:id` to get info about the pokemon with that id.
+
+- log the name of the pokemon with that id
+- use a single `catch` method to handle if the axios request gives back a 404 - in this case, log a user friendly error saying that the pokemon does not exist.
+
+_**Hint**: There are currently no pokemon in the database with IDs between 899 and 10000 so you can use a number between these to test out of your catch works._
+
+### 5. Compare & combine files
+
+In the `5-compare-combine.js` file use the `fs/promises` `readFile` method to read the contents of `secret-message.txt` and `super-secret-message.txt` and:
 
 - log the name of the file that contains the most characters of text and how many more characters it contains.
 - combine the contents of the two files into a single new file `mega-secret-message.txt` using `fs/promises` `writeFile` method.
 
 _**Hint:** [Promise.all()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all) will be useful here!_
 
-### 5. Delete VIP
+### 6. Delete VIP
 
-In the `5-delete-vip.js` file use the `fs/promises` `readFile` method to read the contents of `vip-list.txt` and:
+In the `6-delete-vip.js` file use the `fs/promises` `readFile` method to read the contents of `vip-list.txt` and:
 
 - use `inquirer` to ask the user which VIP they want to remove from the list
 - update the file so that it no longer contains the VIP the user wanted to delete
@@ -47,9 +56,9 @@ In the `5-delete-vip.js` file use the `fs/promises` `readFile` method to read th
 
 _**Hint:** [Promise.all()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all) will be useful here!_
 
-### 6. Save song lyrics
+### 7. Save song lyrics
 
-Now we can use what we have practised so far with promises and using different libraries. Within `4-save-song-lyrics.js`:
+Now we can use what we have practised so far with promises and using different libraries. Within `7-save-song-lyrics.js`:
 
 - Use `inquirer` to ask for an artist and a song.
 - Use the artist and song title to request the song lyrics using `axios` to make an http GET request to this song lyrics api (`https://api.lyrics.ovh/v1/:artist/:song`) _**Warning:** this server might take a little while to respond!_
