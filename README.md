@@ -14,17 +14,19 @@ In the file `1-read-and-log.js` require in `fs/promises` (Note: this is a module
 
 Use the `fs/promises` `readFile` method to read the contents of `secret-message.txt` and log the result to the terminal.
 
+_**Hint:** If you are getting a 'no such file' error with your readFile path, think about which directory you are inside in your terminal (i.e. where you are running the file from)._
+
 ### 2. use inquirer to ask for a name and log a greeting
 
 You will need to install the [inquirer](https://github.com/SBoudrias/Inquirer.js#installation) npm package (`npm install inquirer`). Once installed require `inquirer` into the `2-greet.js` file.
 
 Use `inquirer` to ask for your name when you run the file with `node`, and then log `"Hello <name>!"` to the console.
 
-### 3. use axios to request a random joke
+### 3. use axios to request a list of pokemon
 
-You will need to install the [axios](https://github.com/axios/axios#example) package and require it into the `3-get-joke.js` file.
+You will need to install the [axios](https://github.com/axios/axios#example) package and require it into the `3-get-pokemon.js` file.
 
-Use the `axios` `.get` method to make an http GET request to the `https://icanhazdadjoke.com/` api and log the random quote from the response object.
+Use the `axios` `.get` method to make an http GET request to the `https://pokeapi.co/api/v2/pokemon` api and log the list of pokemon results from the response object.
 
 ### 4. Compare & combine files
 
@@ -52,7 +54,6 @@ Now we can use what we have practised so far with promises and using different l
 - Use `inquirer` to ask for an artist and a song.
 - Use the artist and song title to request the song lyrics using `axios` to make an http GET request to this song lyrics api (`https://api.lyrics.ovh/v1/:artist/:song`) _**Warning:** this server might take a little while to respond!_
 - Save the lyrics to a `lyrics.txt` file using `fs/promises`
-- Use a single `.catch` method to handle any errors that occur in the promise chain. If an error occurs, log a user-friendly message.
 - Update your code to save the lyrics to a file that includes the artist name and song title, i.e. `<artist>-<songTitle>.txt`. _**Hint:** [Promise.all()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all) will be useful here!_
 - Add the option to choose between exiting or getting another song with `inquirer`. _**Hint:** You will need to consider how to make your code re-usable_
 
