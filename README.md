@@ -35,7 +35,17 @@ In the `4-compare-combine.js` file use the `fs/promises` `readFile` method to re
 
 _**Hint:** [Promise.all()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all) will be useful here!_
 
-### 5. Save song lyrics
+### 5. Delete VIP
+
+In the `5-delete-vip.js` file use the `fs/promises` `readFile` method to read the contents of `vip-list.txt` and:
+
+- use `inquirer` to ask the user which VIP they want to remove from the list
+- update the file so that it no longer contains the VIP the user wanted to delete
+- print to the console to tell the user which VIP was successfully deleted
+
+_**Hint:** [Promise.all()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all) will be useful here!_
+
+### 6. Save song lyrics
 
 Now we can use what we have practised so far with promises and using different libraries. Within `4-save-song-lyrics.js`:
 
