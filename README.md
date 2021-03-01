@@ -35,7 +35,7 @@ In `4-get-single-pokemon.js`, use `inquirer` to ask the user for a number that w
 - log the name of the pokemon with that id
 - use a single `catch` method to handle if the axios request gives back a 404 - in this case, log a user friendly error saying that the pokemon does not exist.
 
-_**Hint**: There are currently no pokemon in the database with IDs between 899 and 10000 so you can use a number between these to test out of your catch works._
+_**Hint**: There are currently no pokemon in the database with IDs between 899 and 10000 so you can use a number between these to test that your catch method is working._
 
 ### 5. Compare & combine files
 
