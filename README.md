@@ -56,15 +56,16 @@ In the `6-delete-vip.js` file use the `fs/promises` `readFile` method to read th
 
 _**Hint:** [Promise.all()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all) will be useful here!_
 
-### 7. Save song lyrics
+### 7. Save book details
 
-Now we can use what we have practised so far with promises and using different libraries. Within `7-save-song-lyrics.js`:
+Now we can use what we have practised so far with promises and using different libraries. Within `7-save-book-details.js`:
 
-- Use `inquirer` to ask for an artist and a song.
-- Use the artist and song title to request the song lyrics using `axios` to make an http GET request to this song lyrics api (`https://api.lyrics.ovh/v1/:artist/:song`) _**Warning:** this server might take a little while to respond!_
-- Save the lyrics to a `lyrics.txt` file using `fs/promises`
-- Update your code to save the lyrics to a file that includes the artist name and song title, i.e. `<artist>-<songTitle>.txt`. _**Hint:** [Promise.all()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all) will be useful here!_
-- Add the option to choose between exiting or getting another song with `inquirer`. _**Hint:** You will need to consider how to make your code re-usable_
+- Use `inquirer` to ask for an author and a book.
+- Use the author and book title to request the book details using `axios` to make an http GET request to the google books api (`https://www.googleapis.com/books/v1/volumes?q=${book}+inauthor:${author}`)
+- Save the details to a `details.txt` file using `fs/promises`
+  - You may want to take a look at the data you receive and pick some of the interesting properties to save!
+- Update your code to save the details to a file that includes the author and book title, i.e. `<author>-<bookTitle>.txt`. _**Hint:** [Promise.all()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all) will be useful here!_
+- Add the option to choose between exiting or getting another book with `inquirer`. _**Hint:** You will need to consider how to make your code re-usable_
 
 If you have got up to here... CONGRATULATIONS! Time to take a break and make a brew :).
 
