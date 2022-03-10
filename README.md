@@ -77,4 +77,10 @@ If you have got up to here... CONGRATULATIONS! Time to take a break and make a b
 
 Keep track of your progress by running `npm test`!
 
-3. Update task 5 to use [a loading spinner package](https://github.com/sindresorhus/ora) to log what is happening during the execution of the code.
+3. Update task 5 to use [a loading spinner package](https://www.npmjs.com/package/cli-spinner) to log what is happening during the execution of the code.
+
+4. Make two re-useable functions `startSpinner` and `stopSpinner` These functions should return promises that resolve once your spinner has started or stopped respectively. Test that your functions work by adding them to your promise chain in task 3.
+
+**Additional Functionality**
+
+Add a minimum wait to your `stopSpinner` function to smooth out the UI. The spinner should always show for at least 1 second before being removed.
