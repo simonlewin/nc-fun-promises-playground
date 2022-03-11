@@ -79,8 +79,18 @@ Keep track of your progress by running `npm test`!
 
 3. Update task 5 to use [a loading spinner package](https://www.npmjs.com/package/cli-spinner) to log what is happening during the execution of the code.
 
-4. Make two re-useable functions `startSpinner` and `stopSpinner` These functions should return promises that resolve once your spinner has started or stopped respectively. Test that your functions work by adding them to your promise chain in task 3.
-
 **Additional Functionality**
 
 Add a minimum wait to your `stopSpinner` function to smooth out the UI. The spinner should always show for at least 1 second before being removed.
+
+## Advanced
+
+Make a command line app that contacts users can interact with to fetch data from the [Star Wars API](https://swapi.dev/).
+
+- Users should be presented with a list of star wars films and be able to choose which of the films they would like to know more about.
+- Once they have chosen a film they should be presented with some info about it and some further options.
+- They should be able to choose a character, planet or starship that features in the film to learn more about it.
+- After viewing one of their choices they should be able to return to the previous film or the main menu.
+- Users should be able to continue navigating around and viewing the available info until they are done and have the option to quit and return to the terminal.
+
+Think about what information you can show your users and come up with a nice way to display that info. Look at formatting the data nicely and how you can format your logs to display the info in a user friendly manner. If you're looking for some inspiration then do some research into adding colour to your logs or displaying the data as a table.
