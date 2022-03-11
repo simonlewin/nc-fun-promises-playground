@@ -93,4 +93,4 @@ Make a command line app that contacts users can interact with to fetch data from
 - After viewing one of their choices they should be able to return to the previous film or the main menu.
 - Users should be able to continue navigating around and viewing the available info until they are done and have the option to quit and return to the terminal.
 
-Think about what information you can show your users and come up with a nice way to display that info. Look at formatting the data nicely and how you can format your logs to display the info in a user friendly manner. If you're looking for some inspiration then do some research into adding colour to your logs or displaying the data as a table.
+Think about what information you can show your users and come up with a nice way to display that data. Do some research into how you can format your logs to make them more user friendly than just the raw data. If you're looking for some inspiration then do some research into adding colour to your logs or displaying the data as a table.
