@@ -8,7 +8,7 @@ node ./challenges/1-read-and-log.js
 
 ## Challenges
 
-### 1. use `fs/promises` to read a file
+### **1. use `fs/promises` to read a file**
 
 In the file `1-read-and-log.js` require in `fs/promises` (Note: this is a module that is built into Node JS, so does **not** need to be installed separately).
 
@@ -16,20 +16,25 @@ Use the `fs/promises` `readFile` method to read the contents of `secret-message.
 
 _**Hint:** If you are getting a 'no such file' error with your readFile path, think about which directory you are inside in your terminal (i.e. where you are running the file from)._
 
-### 2. use inquirer to ask for a name and log a greeting
+### **2. use inquirer to ask for a name and log a greeting**
 
-You will need to install the [inquirer](https://github.com/SBoudrias/Inquirer.js#installation) npm package (`npm install inquirer@^8.0.0`). 
-You will need install version 8! Once installed require `inquirer` into the `2-greet.js` file.
+You will need to install the [inquirer](https://github.com/SBoudrias/Inquirer.js#installation) npm package (`npm install inquirer@^8.0.0`).
+
+**Note: You will need install version 8!**
+
+Once installed require `inquirer` into the `2-greet.js` file.
 
 Use `inquirer` to ask for your name when you run the file with `node`, and then log `"Hello <name>!"` to the console.
 
-### 3. use axios to request a list of pokemon
+### **3. use axios to request a list of pokemon**
 
-You will need to install the [axios](https://github.com/axios/axios#example) package and require it into the `3-get-pokemon.js` file.
+You will need to install the [axios](https://github.com/axios/axios#example) package (`npm install axios@^0.27.2`) and require it into the `3-get-pokemon.js` file.
+
+**Note: You will need install version 0.27.2!**
 
 Use the `axios` `.get` method to make an http GET request to the `https://pokeapi.co/api/v2/pokemon` api and log the list of pokemon results from the response object.
 
-### 4. use inquirer and axios to get a single pokemon
+### **4. use inquirer and axios to get a single pokemon**
 
 In `4-get-single-pokemon.js`, use `inquirer` to ask the user for a number that will represent the pokemon id, and then use axios to make a GET request to `https://pokeapi.co/api/v2/pokemon/:id` to get info about the pokemon with that id.
 
@@ -38,7 +43,7 @@ In `4-get-single-pokemon.js`, use `inquirer` to ask the user for a number that w
 
 _**Hint**: There are currently no pokemon in the database with IDs between 19999 and 29999 so you can use a number between these to test that your catch method is working._
 
-### 5. Compare & combine files
+### **5. Compare & combine files**
 
 In the `5-compare-combine.js` file use the `fs/promises` `readFile` method to read the contents of `secret-message.txt` and `super-secret-message.txt` and:
 
@@ -47,7 +52,7 @@ In the `5-compare-combine.js` file use the `fs/promises` `readFile` method to re
 
 _**Hint:** [Promise.all()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all) will be useful here!_
 
-### 6. Delete VIP
+### **6. Delete VIP**
 
 In the `6-delete-vip.js` file use the `fs/promises` `readFile` method to read the contents of `vip-list.txt` and:
 
@@ -57,7 +62,7 @@ In the `6-delete-vip.js` file use the `fs/promises` `readFile` method to read th
 
 _**Hint:** [Promise.all()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all) will be useful here!_
 
-### 7. Save book details
+### **7. Save book details**
 
 Now we can use what we have practised so far with promises and using different libraries. Within `7-save-book-details.js`:
 
@@ -70,7 +75,7 @@ Now we can use what we have practised so far with promises and using different l
 
 If you have got up to here... CONGRATULATIONS! Time to take a break and make a brew :).
 
-## Extra Challenges
+## **Extra Challenges**
 
 1. Refactor challenges 1, 2 and 3 into flexible/reusable functions.
 
@@ -84,7 +89,7 @@ Keep track of your progress by running `npm test`!
 
 Add a minimum wait to your `stopSpinner` function to smooth out the UI. The spinner should always show for at least 1 second before being removed.
 
-## Advanced
+## **Advanced**
 
 Make a command line app that contacts users can interact with to fetch data from the [Star Wars API](https://swapi.dev/).
 
