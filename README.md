@@ -28,9 +28,9 @@ Use `inquirer` to ask for your name when you run the file with `node`, and then 
 
 ### **3. use axios to request a list of pokemon**
 
-You will need to install the [axios](https://github.com/axios/axios#example) package (`npm install axios@^0.27.2`) and require it into the `3-get-pokemon.js` file.
+You will need to install the [axios](https://github.com/axios/axios#example) package (`npm install axios@^1.1.3`) and require it into the `3-get-pokemon.js` file.
 
-**Note: You will need install version 0.27.2!**
+**Note: You will need install version 1.1.3!**
 
 Use the `axios` `.get` method to make an http GET request to the `https://pokeapi.co/api/v2/pokemon` api and log the list of pokemon results from the response object.
 
