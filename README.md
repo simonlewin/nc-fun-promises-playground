@@ -18,7 +18,7 @@ _**Hint:** If you are getting a 'no such file' error with your readFile path, th
 
 ### **2. use inquirer to ask for a name and log a greeting**
 
-You will need to install the [inquirer](https://github.com/SBoudrias/Inquirer.js#installation) npm package (`npm install inquirer@^8.0.0`).
+You will need to install the [inquirer](https://github.com/SBoudrias/Inquirer.js#installation) npm package (`npm install inquirer@8.0.0`).
 
 **Note: You will need install version 8!**
 
@@ -28,7 +28,7 @@ Use `inquirer` to ask for your name when you run the file with `node`, and then 
 
 ### **3. use axios to request a list of pokemon**
 
-You will need to install the [axios](https://github.com/axios/axios#example) package (`npm install axios@^1.1.3`) and require it into the `3-get-pokemon.js` file.
+You will need to install the [axios](https://github.com/axios/axios#example) package (`npm install axios@1.1.3`) and require it into the `3-get-pokemon.js` file.
 
 **Note: You will need install version 1.1.3!**
 
