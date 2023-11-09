@@ -1,6 +1,2 @@
-
-
-function findPet(petName) {
-
-
+function findPet(petName) {}
 module.exports = findPet;
