@@ -1,30 +1,30 @@
-const findPet = require("../challenges/1-find-pet");
+const findPet = require("../challenges/4-find-pet");
 
 describe("findPet()", () => {
   test("returns a promise", () => {
     expect(typeof findPet("garfield").then).toBe("function");
   });
-  test("resolves with the pet from the appropriate file", () => {
+  test("resolves with the pets from the appropriate file", () => {
     return Promise.all([
       findPet("garfield"),
-      findPet("opal"),
-      findPet("peanut"),
+      findPet("bolin"),
+      findPet("peanut")
     ]).then((promises) => {
-      const [garfield, opal, peanut] = promises;
+      const [garfield, bolin, peanut] = promises;
       expect(garfield).toEqual({
         name: "garfield",
         favFood: "lasagne",
-        dislikes: "nermal",
+        dislikes: "nermal"
       });
-      expect(opal).toEqual({
-        name: "opal",
-        favFood: "whiskers",
-        dislikes: "strangers cuddles",
+      expect(bolin).toEqual({
+        name: "bolin",
+        favFood: "nando's",
+        dislikes: "not being the centre of attention"
       });
       expect(peanut).toEqual({
         name: "peanut",
         favFood: "chicken",
-        dislikes: "deep puddles",
+        dislikes: "deep puddles"
       });
     });
   });
