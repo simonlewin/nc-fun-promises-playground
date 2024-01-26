@@ -7,19 +7,19 @@ describe("findPet()", () => {
   test("resolves with the pets from the appropriate file", () => {
     return Promise.all([
       findPet("garfield"),
-      findPet("opal"),
+      findPet("bolin"),
       findPet("peanut")
     ]).then((promises) => {
-      const [garfield, opal, peanut] = promises;
+      const [garfield, bolin, peanut] = promises;
       expect(garfield).toEqual({
         name: "garfield",
         favFood: "lasagne",
         dislikes: "nermal"
       });
-      expect(opal).toEqual({
-        name: "opal",
-        favFood: "whiskers",
-        dislikes: "strangers cuddles"
+      expect(bolin).toEqual({
+        name: "bolin",
+        favFood: "nando's",
+        dislikes: "not being the centre of attention"
       });
       expect(peanut).toEqual({
         name: "peanut",
