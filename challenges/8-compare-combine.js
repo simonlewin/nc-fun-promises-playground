@@ -3,10 +3,7 @@ const fs = require("fs/promises");
 const string1 = fs.readFile("./secret-message.txt", "utf8");
 const string2 = fs.readFile("./super-secret-message.txt", "utf8");
 
-Promise.all([string1, string2]).then((values) => {
-  const str1 = values[0];
-  const str2 = values[1];
-
+Promise.all([string1, string2]).then(([str1, str2]) => {
   const fileName =
     str1.length > str2.length
       ? "secret-message.txt"
