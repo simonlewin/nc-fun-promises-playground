@@ -8,4 +8,4 @@ inquirer
       type: "input",
     },
   ])
-  .then((answer) => console.log(`Hello ${answer.greeting}!`));
+  .then(({ greeting }) => console.log(`Hello ${greeting}!`));
